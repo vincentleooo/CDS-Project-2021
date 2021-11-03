@@ -1,0 +1,230 @@
+---
+title: "Model selection"
+author: "Vincent Leonardo"
+date: "Term 6, 2021"
+output:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+    toc: yes
+    toc_depth: 2
+    number_sections: yes
+---
+
+```{r include=FALSE}
+loadPkg <- function(pkgname){
+  # Test to see if package pkgname is installed. 
+  # character.only=TRUE means pkgname is a character string with the name 
+  # of the package we want to use. 
+  if(require(pkgname, character.only = TRUE)) {
+    # paste0() concatenates strings without any separator
+    print(paste0("'", pkgname,"' is loaded correctly"))
+  } else {
+    # The require() function returned FALSE so we will try to install the 
+    # package from the CRAN site
+    print(paste0("Trying to install '", pkgname, "'"))
+    install.packages(pkgname, character.only = TRUE,
+                     repos="http://cran.us.r-project.org")
+    if(require(pkgname, character.only = TRUE)) {
+      print(paste0("'", pkgname, "' is installed and loaded."))
+    } else {
+      print(paste0("Could not install '", pkgname, "'"))
+    }
+  }
+}
+
+# If we provide a vector of package names, we can load them all as follows:
+loadPkgs <- function(pkgnames){
+  for (pkgname in pkgnames) loadPkg(pkgname)
+}
+
+pkgs <- c('tidyverse',
+          'dplyr', 
+          'colorspace', 
+          'ggfortify', 
+          'GGally', 
+          'psych', 
+          'ggbiplot', 
+          'AMR', 
+          'caret',
+          'ROCR', 
+          'pROC',
+          'mlogit', 
+          'leaps',
+          'glmnet',
+          "sjPlot",
+          "sjmisc",
+          "sjlabelled",
+          "knitr")
+
+loadPkgs(pkgs)
+
+# Theme for ggplot
+theme_set(
+  theme_light() + theme(legend.position = "top")
+)
+```
+
+```{r}
+rain <- read_csv('../datasets/indonesia/rainfall.csv')
+rain
+```
+
+
+```{r}
+rain_long <- rain %>% 
+  pivot_longer(cols = c('2011', '2012', '2013', '2014', '2015'),
+               names_to = 'year',
+               values_to = 'cum_rf')
+rain_long
+```
+```{r}
+ggplot(rain_long) + geom_histogram(aes(cum_rf), bins = 10, fill = 'black') + facet_wrap(~year, nrow = 2) +
+  labs(title = "Histogram of rainfall across 34 provinces in Indonesia",
+       subtitle = "2011-2015",
+       x = "Count",
+       y = "Cumulative Rainfall",
+       caption = "Data collected from BMKG Indonesia")
+```
+
+
+```{r}
+temp <- read_csv('../datasets/indonesia/temp.csv')
+head(temp)
+```
+
+```{r}
+temp_long <- temp %>% 
+  pivot_longer(cols = c('2011', '2012', '2013', '2014', '2015'),
+               names_to = 'year',
+               values_to = 'ave_temp')
+temp_long
+```
+
+```{r}
+temp_long_plot <- temp_long %>% filter(ave_temp > 0)
+
+ggplot(temp_long_plot) + geom_histogram(aes(ave_temp), bins = 10, fill = 'black') + facet_wrap(~year, nrow = 2) +
+  labs(title = "Histogram of mean daily temperature across 34 provinces in Indonesia",
+       subtitle = "2011-2015",
+       x = "Count",
+       y = "Mean Daily Temperature",
+       caption = "Data collected from BMKG Indonesia")
+```
+
+```{r}
+rh <- read_csv('../datasets/indonesia/humidity.csv')
+head(rh)
+```
+
+```{r}
+rh_long <- rh %>% 
+  pivot_longer(cols = c('2011', '2012', '2013', '2014', '2015'),
+               names_to = 'year',
+               values_to = 'ave_rh')
+rh_long
+```
+
+```{r}
+rh_long_plot <- rh_long %>% filter(ave_rh > 0)
+
+ggplot(rh_long_plot) + geom_histogram(aes(ave_rh), bins = 10, fill = 'black') + facet_wrap(~year, nrow = 2) +
+  labs(title = "Histogram of mean daily humidity across 34 provinces in Indonesia",
+       subtitle = "2011-2015",
+       x = "Count",
+       y = "Mean Daily Humidity",
+       caption = "Data collected from BMKG Indonesia")
+```
+
+```{r}
+climate <- rain_long %>% left_join(temp_long) %>% left_join(rh_long)
+climate
+```
+
+```{r}
+ggpairs(climate %>% select(!c(Province, year))) + 
+  labs(title = "Correlations between variables",
+       subtitle = "Combined data between rainfall, temperature, humidity",
+      caption = "Data collected from BMKG Indonesia")
+```
+```{r}
+edu <- read_csv('../datasets/education/indo_edu.csv')
+head(edu)
+```
+
+```{r}
+edu_long <- edu %>% 
+  mutate(`2015` = as.character(`2015`)) %>% 
+  pivot_longer(cols = c('2011', '2012', '2013', '2014', '2015'),
+               names_to = 'year',
+               values_to = 'part_rate')
+edu_long
+```
+```{r}
+climate_edu <- climate %>% left_join(edu_long) %>% 
+  mutate(year = as.numeric(year),
+         part_rate = as.numeric(part_rate),
+         ave_rh = tidyr::replace_na(ave_rh, 0)) %>% 
+  filter(cum_rf > 0, ave_temp > 0, ave_rh > 0)
+climate_edu
+```
+
+```{r}
+ggpairs(climate_edu %>% select(!c(Province, year))) + 
+  labs(title = "Correlations between variables",
+       subtitle = "Combined data between rainfall, temperature, humidity and school participation",
+      caption = "Data collected from BMKG Indonesia and BPS Indonesia")
+```
+
+
+```{r}
+train <- climate_edu %>% filter(year != '2015')
+test <- climate_edu %>% filter(year == '2015')
+train <- train %>% filter(Province != 'Kalimantan Utara')
+```
+
+```{r}
+model <- lm(part_rate ~ ., data = train %>% select(!Province))
+summary(model)
+tab_model(model)
+```
+
+```{r}
+model1 <- regsubsets(part_rate ~ ., data = train %>% select(!Province))
+summary(model1)
+```
+
+```{r}
+plot(summary(model1)$rsq)
+plot(summary(model1)$adjr2)
+which.max(summary(model1)$adjr2)
+```
+```{r}
+summary(model1)$which[which.max(summary(model1)$adjr2), summary(model1)$which[which.max(summary(model1)$adjr2), ] == TRUE]
+```
+
+```{r}
+model2 <- lm(part_rate ~ year, data = train %>% select(!Province))
+summary(model2)
+tab_model(model2)
+```
+
+```{r}
+tab_model(model, model2)
+```
+
+```{r}
+vif1 <- car::vif(model)
+# kables(list(kable(vif1, col.names = 'VIF', caption = "VIF for Model 1"), kable(vif2, col.names = "VIF", caption = "VIF for Model 2")), caption = "VIF for Both Models")
+kable(vif1, col.names = 'VIF', caption = "VIF for Model 1")
+```
+
+```{r}
+prediction <- predict(model2, newdata = test)
+mse <- mean((prediction - as.numeric(test$part_rate))^2)
+mse
+rmse <- sqrt(mse)
+rmse
+```
+
+
