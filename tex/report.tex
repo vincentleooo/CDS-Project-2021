@@ -16,7 +16,7 @@
 
 \usepackage{amsfonts}
 
-\usepackage[notes,backend=biber]{biblatex-chicago}
+\usepackage[notes,backend=biber,useibid=true]{biblatex-chicago}
 \bibliography{bib}
 
 % \bibliography{bailey}
@@ -237,7 +237,7 @@
 
 \title{Classification of Myers-Briggs Type Indicator (MBTI) Type Based on Past Posts on Internet Forums}
 
-\author{}
+\author{Vincent Leonardo\\Selvam Shwetha\\Sun Kairan}
 
 % \date{} % Activate to display a given date or no date (if empty),
 
@@ -250,6 +250,16 @@
 \begin{document}
 	
 	\maketitle
+	
+	\vfill
+	\begin{center}
+			GitHub repository link: \texttt{https://github.com/placid-brain/CDS-Project-2021}
+	\end{center}
+
+	\newpage
+	
+	\tableofcontents
+	\newpage
 
 	\section{Introduction}
 	
@@ -265,6 +275,7 @@
 	
 	As such, the focus of this research will be on the holistic prediction of MBTI based on textual contents written by users of a social media platform. The methods of processing the textual data will be discussed, both in terms of its shape and transformations. Afterwards, a discussion on the model best suited for this classification task will be shown, followed by the choice for good baseline models. In the end, there will be an exploration on the models chosen in the attempt to improve on them or to combine them.
 	
+	\newpage
 	\section{Dataset}
 	
 	\subsection{Source}
@@ -322,6 +333,8 @@
 	However, the population distribution based on the MBTI types seem to be extremely uneven. In order to find out if this is the case for most of the population, a cross reference into a different dataset is done. This time, the dataset is from Reddit, with one post per row.\autocite{storeyMyersBriggsPersonality2018} The observation from that dataset indicates that it is likely that, at least on the internet, the labelled MBTI type distribution is very uneven as seen from Figures 3 and 4.
 	
 	This presents a problem in that since the difference between the type with the highest population and the lowest population is extremely large, classifying these minority types might be much more difficult and with more errors than the majority types. The problem of uneven types can also be seen even when dividing them into their respective dichotomies and trichotomies as seen in Figures 5, 6 and 7.
+	
+
 
 	\begin{figure}[h!]
 		\centering
@@ -370,8 +383,11 @@
 
 	When observing the word clouds in Figure 8, there seems to be an indication that the corpus themselves contain the correct classification. This is to be expected as the data came from a forum based on conversations on personality. Therefore, the removal of these words is one of the considerations that is going to be made when preprocessing the text data. Knowing that the types of words used are different in each class means that there is some confirmation that classification based on text data might be feasible.
 	
-	\newpage
+	\clearpage
+	
 	\section{Modelling}
+	
+	On a macro scale, the process of modelling the data will involve the input of the dataset as mentioned above with the objective of obtaining a model that best predicts the MBTI type of the user based on their posts.
 	
 	\begin{figure}[h!]
 		\centering
@@ -382,7 +398,6 @@
 		
 	\end{figure}
 
-	On a macro scale, the process of modelling the data will involve the input of the dataset as mentioned above with the objective of obtaining a model that best predicts the MBTI type of the user based on their posts.
 	
 	\begin{figure}[h!]
 		\centering
@@ -393,8 +408,10 @@
 		
 	\end{figure}
 	
-	Observing the process a little bit deeper, there are roughly four main steps, happening somewhat sequentially, though there will be many iterations based on the model accuracy. The data goes through text preprocessing first, involving removals of irrelevant data and transformations required for the models being tested. Here, processing time is a concern as it will also impact not only the modelling, but also the prediction time using the model. The processed text is then fed into the model selection process where several candidates from machine learning and neural network models are chosen and tested based on their accuracies. Again, there are constraints based on the resources had and the complexity of the model also affects the time taken in training, knowing the relatively limited timespan had in going through the various models. After the top few models are chosen, they will be tweaked and even be combined together, and the ones with the highest accuracy will be chosen as the final model. The evaluation process will depend on the complexity of the model, potentially including not only accuracy and confusion matrices, but also cross-validation scores. The ROC/AUC curve was also considered, but knowing the unevenness of the MBTI types in the dataset, it was decided that it will not be as reliable as the F1-score.\autocite{MachineLearningF1}
+	Observing the process a little bit deeper, there are roughly four main steps, happening somewhat sequentially, though there will be many iterations based on the model accuracy. The data goes through text preprocessing first, involving removals of irrelevant data and transformations required for the models being tested. Here, processing time is a concern as it will also impact not only the modelling, but also the prediction time using the model. The processed text is then fed into the model selection process where several candidates from machine learning and neural network models are chosen and tested based on their accuracies. Again, there are constraints based on the resources had and the complexity of the model also affects the time taken in training, knowing the relatively limited timespan had in going through the various models. After the top few models are chosen, they will be tweaked and even be combined together, and the ones with the highest accuracy will be chosen as the final model. The evaluation process will depend on the complexity of the model, potentially including not only accuracy, classification reports, and confusion matrices, but also cross-validation scores. The ROC/AUC curve was also considered, but knowing the unevenness of the MBTI types in the dataset, it was decided that it will not be as reliable as the F1-score.\autocite{MachineLearningF1}
 	
+	
+	\clearpage
 	\section{Text preprocessing}
 	
 	\subsection{Cleaning}
@@ -416,8 +433,9 @@
 	
 	\subsection{Word embeddings}
 	
-	There are three different choices that were compiled: GloVe, FastText, and Paragram.\autocite{GloVeGlobalVectors}{EnglishWordVectors}{JohnWieting} These three will be tested during the model tweaking and combination stage. The baseline word embedding chosen will be FastText due to its advantage of being able to work well with rare and unrepresented words.\autocite{GloVeFastTextTwo} Moreover, its vector file is the smallest of the three.
+	There are three different choices that were compiled: GloVe, FastText, and Paragram.\autocites{GloVeGlobalVectors}{EnglishWordVectors}{JohnWieting} These three will be tested during the model tweaking and combination stage. The baseline word embedding chosen will be FastText due to its advantage of being able to work well with rare and unrepresented words.\autocite{GloVeFastTextTwo} Moreover, its vector file is the smallest of the three.
 	
+	\clearpage
 	\section{Model selection}
 	
 	\subsection{Classical machine learning models}
@@ -460,6 +478,8 @@
 	
 	While CatBoost seemed to be very promising, the ultimate choice here is to attempt to use a CNN model due to its greater flexibility. Also, LSTM will also be considered as an extension to the CNN model with the hopes of improving the accuracy. Therefore, the baseline model used to tweak and combine will be the CNN model that excluded the removal of single characters, lemmatisation, and the removal of stop words.
 	
+	
+	\newpage
 	\section{Model tweaking and combination}
 	
 	There were a few comparisons made in order to find out ways to improve the model further.
@@ -467,6 +487,8 @@
 	\subsection{Text preprocessing}
 	
 	As outlined earlier, the accuracy seemed to be better when the single characters and stop words are not removed and the words are not lemmatised. However, there is also the question of which word embedding model to use. When using GloVe, the accuracy reached 0.70, while using Paragram yielded 0.71. Therefore, the usage of Paragram seems to be better.
+	
+	Knowing that the model will perform poorly on the whole sixteen classes, it is then decided that the final models will only cover the top six classes such that it can be a more reliable model.
 	
 	\subsection{Tweaks and combinations}
 	
@@ -479,27 +501,48 @@
 	\begin{figure}[h!]
 		\centering
 		
-		\includegraphics[width=\textwidth]{../output/visualisations/code}
+		\includegraphics[height=9cm]{../output/visualisations/code}
 		
-		\caption{Population distribution of the MBTI types}
+		\caption{Code for the model chosen}
 		
 	\end{figure}
 	
+	\newpage
+	
 	\section{Model evaluation}
 	
-	Due to the model chosen being a neural network, it was decided that a cross-validation technique will be impractical. As such, the evaluation will be in the form of a confusion matrix.
+	Due to the model chosen being a neural network, it was decided that a cross-validation technique will be impractical. As such, the evaluation will be in the form of a confusion matrix and classification report.
+	
+	\begin{table}[h!]
+		\centering
+		\begin{tabular}{l|llll}
+			& Precision & Recall & F1-Score & Support \\ \hline
+			ENFP         & 0.77      & 0.75   & 0.76     & 169     \\
+			ENTP         & 0.70      & 0.71   & 0.71     & 171     \\
+			INFJ         & 0.81      & 0.76   & 0.78     & 368     \\
+			INFP         & 0.78      & 0.84   & 0.81     & 458     \\
+			INTJ         & 0.82      & 0.75   & 0.79     & 273     \\
+			INTP         & 0.78      & 0.80   & 0.79     & 326     \\
+			Accuracy     &           &        & 0.78     & 1765    \\
+			Macro Avg    & 0.78      & 0.77   & 0.77     & 1765    \\
+			Weighted Avg & 0.78      & 0.78   & 0.78     & 1765   
+		\end{tabular}
+		\caption{Classification report for the model}
+		\label{tab:my-table}
+	\end{table}
 	
 	\begin{figure}[h!]
 		\centering
 		
-		\includegraphics[width=\textwidth]{../output/visualisations/confusion}
+		\includegraphics[height=11cm]{../output/visualisations/confusion}
 		
-		\caption{Population distribution of the MBTI types}
+		\caption{Confusion matrix of the model's prediction on the validation set}
 		
 	\end{figure}
 	
-	From this confusion matrix, it can be concluded that the model works relatively well for the majority data, but falls short when considering the minority data. Some of the confusions shown are from MBTI types that differ only by one letter, particularly within the J/P dichotomy.\autocite{choongPredictingJudgingperceivingMyersBriggs2021} Other works have shown that this particular dichotomy is quite challenging to predict.
+	From the classification report and the confusion matrix, it can be concluded that the model works relatively well for the majority data, but falls short when considering the minority data. Some of the confusions shown are from MBTI types that differ only by one letter, particularly within the J/P dichotomy.\autocite{choongPredictingJudgingperceivingMyersBriggs2021} Other works have shown that this particular dichotomy is quite challenging to predict.
 	
+	\newpage
 	\section{Conclusion}
 	
 	In conclusion, it seems like it will be very difficult to push the accuracy beyond 0.80. This makes sense when considering the nature and weakness of the MBTI. As this is the aggregation of the past fifty posts by users in a forum, it stands to reason that, knowing that people's MBTI types tend to change over a period of time, the MBTI of a user can change slightly over the course of the fifty posts, affecting the aggregated data. Moreover, the inability for the model to predict the minority data well can be attributed to the lack of data. As such, an improvement to this model will include this in mind.
@@ -507,5 +550,8 @@
 	Another future improvement that can be considered is in exploring the usage of CatBoost a bit further. This is as it has shown a remarkable accuracy. Also, the usage of transfer learning on transformer models such as BERT, ULMFiT, and the likes, can allow for an increase in the accuracy.
 	
 	In the end, the model is unlikely to have the potential to be generalised to a more public dataset. This is due to the conversation that revolves around the forum being more focused and niche, thus potentially creating bias in the model when exposed to datasets from other sources.\autocite{choongPredictingJudgingperceivingMyersBriggs2021} The issue of uneven numbers in the distribution of the MBTI types is also one challenge in need of solving. Thus, a larger, more even labelled dataset is needed to improve the model.
+	
+	\newpage
+	\printbibliography
 
 \end{document}

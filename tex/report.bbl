@@ -217,6 +217,27 @@
       \field{year}{2008}
       \field{dateera}{ce}
     \endentry
+    \entry{EnglishWordVectors}{online}{}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This page gathers several pre-trained word vectors trained using fastText.}
+      \field{langid}{english}
+      \field{title}{English Word Vectors · {{fastText}}}
+      \field{urlday}{5}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/vincentleonardo/Documents/Zotero/storage/U9IJFIKD/english-vectors.html
+      \endverb
+      \verb{urlraw}
+      \verb https://fasttext.cc/index.html
+      \endverb
+      \verb{url}
+      \verb https://fasttext.cc/index.html
+      \endverb
+    \endentry
     \entry{GloVeFastTextTwo}{online}{}
       \list{organization}{1}{%
         {dzone.com}%
@@ -258,6 +279,25 @@
       \endverb
       \verb{url}
       \verb https://nlp.stanford.edu/projects/glove/
+      \endverb
+    \endentry
+    \entry{JohnWieting}{online}{}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labeltitlesource}{title}
+      \field{title}{John {{Wieting}}}
+      \field{urlday}{5}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/vincentleonardo/Documents/Zotero/storage/YLBQEPFR/~jwieting.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cs.cmu.edu/~jwieting/
+      \endverb
+      \verb{url}
+      \verb https://www.cs.cmu.edu/~jwieting/
       \endverb
     \endentry
     \entry{lakeTrustNameBrand2019}{article}{}
