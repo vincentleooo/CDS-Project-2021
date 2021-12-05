@@ -1245,4 +1245,100 @@ File: ../output/visualisations/trichotomy_dist.png Graphic file (type png)
 <use ../output/visualisations/trichotomy_dist.png>
 Package pdftex.def Info: ../output/visualisations/trichotomy_dist.png  used on 
 input line 356.
-(pdftex.def)             
+(pdftex.def)             Requested size: 419.03397pt x 256.0748pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../output/visualisations/wc.png, id=28, 910.602pt x 510.4671pt>
+File: ../output/visualisations/wc.png Graphic file (type png)
+<use ../output/visualisations/wc.png>
+Package pdftex.def Info: ../output/visualisations/wc.png  used on input line 36
+5.
+(pdftex.def)             Requested size: 452.9679pt x 253.92435pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[3 <../output/visualisations/histogram_len_post.png>] [4 <../output/visualisati
+ons/len_post_type.png> <../output/visualisations/class_dist.png>]
+<img/CDS0.png, id=39, 818.45775pt x 569.12625pt>
+File: img/CDS0.png Graphic file (type png)
+<use img/CDS0.png>
+Package pdftex.def Info: img/CDS0.png  used on input line 379.
+(pdftex.def)             Requested size: 452.9679pt x 314.98302pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/CDS.png, id=40, 818.45775pt x 569.12625pt>
+File: img/CDS.png Graphic file (type png)
+<use img/CDS.png>
+Package pdftex.def Info: img/CDS.png  used on input line 390.
+(pdftex.def)             Requested size: 452.9679pt x 314.98302pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[5 <../output/visualisations/class_dist_reddit.png> <../output/visualisations/d
+ichotomy_dist.png>]
+
+LaTeX Warning: Text page 6 contains only floats.
+
+[6 <../output/visualisations/dichotomy_dist_2.png> <../output/visualisations/tr
+ichotomy_dist.png>] [7 <../output/visualisations/wc.png> <./img/CDS0.png>]
+[8 <./img/CDS.png>]
+Overfull \hbox (115.56258pt too wide) in paragraph at lines 419--420
+\OT1/cmr/m/n/10.95 There are three dif-fer-ent choices that were com-piled: Glo
+Ve, Fast-Text, and Para-gram.[]EnglishWordVectorsJohnWieting
+ []
+
+[9] [10]
+<../output/visualisations/code.png, id=66, 2123.935pt x 1377.145pt>
+File: ../output/visualisations/code.png Graphic file (type png)
+<use ../output/visualisations/code.png>
+Package pdftex.def Info: ../output/visualisations/code.png  used on input line 
+482.
+(pdftex.def)             Requested size: 452.9679pt x 293.68486pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../output/visualisations/confusion.png, id=67, 691.58376pt x 674.52pt>
+File: ../output/visualisations/confusion.png Graphic file (type png)
+<use ../output/visualisations/confusion.png>
+Package pdftex.def Info: ../output/visualisations/confusion.png  used on input 
+line 495.
+(pdftex.def)             Requested size: 452.9679pt x 441.7984pt.
+[11]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[12 <../output/visualisations/code.png>] [13 <../output/visualisations/confusio
+n.png>] (./report.aux)
+Package logreq Info: Writing requests to 'report.run.xml'.
+\openout1 = `report.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 36130 strings out of 478994
+ 856489 string characters out of 5858184
+ 1929413 words of memory out of 5000000
+ 53051 multiletter control sequences out of 15000+600000
+ 416009 words of font info for 73 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 102i,11n,103p,1489b,3816s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
+r/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
+local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
+al/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/
+texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
+exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on report.pdf (13 pages, 3789694 bytes).
+PDF statistics:
+ 113 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+

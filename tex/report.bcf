@@ -3436,4 +3436,64 @@
   <!-- CITATION DATA -->
   <!-- SECTION 0 -->
   <bcf:bibdata section="0">
- 
+    <bcf:datasource type="file" datatype="bibtex">bib.bib</bcf:datasource>
+  </bcf:bibdata>
+  <bcf:section number="0">
+    <bcf:citekey order="1">myersGiftsDifferingUnderstanding1995</bcf:citekey>
+    <bcf:citekey order="2">choongPredictingJudgingperceivingMyersBriggs2021</bcf:citekey>
+    <bcf:citekey order="3">choongPredictingJudgingperceivingMyersBriggs2021</bcf:citekey>
+    <bcf:citekey order="4">lilienfeldSciencePseudoscienceClinical2014</bcf:citekey>
+    <bcf:citekey order="5">lakeTrustNameBrand2019</bcf:citekey>
+    <bcf:citekey order="6">carrollMyersBriggsTypeIndicator</bcf:citekey>
+    <bcf:citekey order="7">coffieldLearningStylesPedagogy2004</bcf:citekey>
+    <bcf:citekey order="8">tobacykParanormalBeliefsBarnum1988</bcf:citekey>
+    <bcf:citekey order="9">costajrRevisedNeoPersonality2008</bcf:citekey>
+    <bcf:citekey order="10">yiMBTIBasedCollaborativeRecommendation2016</bcf:citekey>
+    <bcf:citekey order="11">yoonEffectBigFive2018</bcf:citekey>
+    <bcf:citekey order="12">yamadaIncorporatingTextualInformation2019</bcf:citekey>
+    <bcf:citekey order="13">choongPredictingJudgingperceivingMyersBriggs2021</bcf:citekey>
+    <bcf:citekey order="14">choongPredictingJudgingperceivingMyersBriggs2021</bcf:citekey>
+    <bcf:citekey order="15">MBTIMyersBriggsPersonality</bcf:citekey>
+    <bcf:citekey order="16">storeyMyersBriggsPersonality2018</bcf:citekey>
+    <bcf:citekey order="17">MachineLearningF1</bcf:citekey>
+    <bcf:citekey order="18">GloVeGlobalVectors</bcf:citekey>
+    <bcf:citekey order="19">GloVeFastTextTwo</bcf:citekey>
+    <bcf:citekey order="20">choongPredictingJudgingperceivingMyersBriggs2021</bcf:citekey>
+    <bcf:citekey order="21">choongPredictingJudgingperceivingMyersBriggs2021</bcf:citekey>
+  </bcf:section>
+  <!-- SORTING TEMPLATES -->
+  <bcf:sortingtemplate name="cms">
+    <bcf:sort order="1">
+      <bcf:sortitem order="1">presort</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="2" final="1">
+      <bcf:sortitem order="1">sortkey</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="3">
+      <bcf:sortitem order="1">sortname</bcf:sortitem>
+      <bcf:sortitem order="2">author</bcf:sortitem>
+      <bcf:sortitem order="3">namea</bcf:sortitem>
+      <bcf:sortitem order="4">editor</bcf:sortitem>
+      <bcf:sortitem order="5">nameb</bcf:sortitem>
+      <bcf:sortitem order="6">translator</bcf:sortitem>
+      <bcf:sortitem order="7">namec</bcf:sortitem>
+      <bcf:sortitem order="8">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="9">journaltitle</bcf:sortitem>
+      <bcf:sortitem order="10">organization</bcf:sortitem>
+      <bcf:sortitem order="11">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="4">
+      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="2">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="5">
+      <bcf:sortitem order="1">sortyear</bcf:sortitem>
+      <bcf:sortitem order="2">year</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="6">
+      <bcf:sortitem order="1" pad_side="left" pad_width="4" pad_char="0">volume</bcf:sortitem>
+      <bcf:sortitem literal="1" order="2">0000</bcf:sortitem>
+    </bcf:sort>
+  </bcf:sortingtemplate>
+  <!-- DATALISTS -->
+</bcf:controlfile>
