@@ -1,0 +1,693 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{cms/global//global/global}
+    \entry{MBTIMyersBriggsPersonality}{online}{}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Includes a large number of people's MBTI type and content written by them}
+      \field{langid}{english}
+      \field{title}{({{MBTI}}) {{Myers}}-{{Briggs Personality Type Dataset}}}
+      \field{urlday}{5}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/vincentleonardo/Documents/Zotero/storage/PQA6ICVF/mbti-type.html
+      \endverb
+      \verb{urlraw}
+      \verb https://kaggle.com/datasnaek/mbti-type
+      \endverb
+      \verb{url}
+      \verb https://kaggle.com/datasnaek/mbti-type
+      \endverb
+    \endentry
+    \entry{carrollMyersBriggsTypeIndicator}{online}{}
+      \name{author}{1}{}{%
+        {{hash=663d2a18415bf8b91c12bce1db38fae9}{%
+           family={Carroll},
+           familyi={C\bibinitperiod},
+           given={Robert\bibnamedelima T.},
+           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{663d2a18415bf8b91c12bce1db38fae9}
+      \strng{fullhash}{663d2a18415bf8b91c12bce1db38fae9}
+      \strng{bibnamehash}{663d2a18415bf8b91c12bce1db38fae9}
+      \strng{authorbibnamehash}{663d2a18415bf8b91c12bce1db38fae9}
+      \strng{authornamehash}{663d2a18415bf8b91c12bce1db38fae9}
+      \strng{authorfullhash}{663d2a18415bf8b91c12bce1db38fae9}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Myers-{{Briggs Type Indicator}} - {{The Skeptic}}'s {{Dictionary}} - {{Skepdic}}.Com}
+      \field{urlday}{5}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/vincentleonardo/Documents/Zotero/storage/9267Q268/myersb.html
+      \endverb
+      \verb{urlraw}
+      \verb http://skepdic.com/myersb.html
+      \endverb
+      \verb{url}
+      \verb http://skepdic.com/myersb.html
+      \endverb
+    \endentry
+    \entry{choongPredictingJudgingperceivingMyersBriggs2021}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d8fae5c2d1189206d3e9acf1b8a43d96}{%
+           family={Choong},
+           familyi={C\bibinitperiod},
+           given={En\bibnamedelima Jun},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=e73c14066d9589406fa72dec338ac5e3}{%
+           family={Varathan},
+           familyi={V\bibinitperiod},
+           given={Kasturi\bibnamedelima Dewi},
+           giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {PeerJ Inc.}%
+      }
+      \strng{namehash}{e12093e6e520102bc9f48627b60c1a08}
+      \strng{fullhash}{e12093e6e520102bc9f48627b60c1a08}
+      \strng{bibnamehash}{e12093e6e520102bc9f48627b60c1a08}
+      \strng{authorbibnamehash}{e12093e6e520102bc9f48627b60c1a08}
+      \strng{authornamehash}{e12093e6e520102bc9f48627b60c1a08}
+      \strng{authorfullhash}{e12093e6e520102bc9f48627b60c1a08}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Myers-Briggs Type Indicator (MBTI) is a well-known personality test that assigns a personality type to a user by using four traits dichotomies. For many years, people have used MBTI as an instrument to develop self-awareness and to guide their personal decisions. Previous researches have good successes in predicting Extraversion-Introversion (E/I), Sensing-Intuition (S/N) and Thinking-Feeling (T/F) dichotomies from textual data but struggled to do so with Judging-Perceiving (J/P) dichotomy. J/P dichotomy in MBTI is a non-separable part of MBTI that have significant inference on human behavior, perception and decision towards their surroundings. It is an assessment on how someone interacts with the world when making decision. This research was set out to evaluate the performance of the individual features and classifiers for J/P dichotomy in personality computing. At the end, data leakage was found in dataset originating from the Personality Forum Café, which was used in recent researches. The results obtained from the previous research on this dataset were suggested to be overly optimistic. Using the same settings, this research managed to outperform previous researches. Five machine learning algorithms were compared, and LightGBM model was recommended for the task of predicting J/P dichotomy in MBTI personality computing.}
+      \field{day}{23}
+      \field{issn}{2167-8359}
+      \field{journaltitle}{PeerJ}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{shortjournal}{PeerJ}
+      \field{title}{Predicting Judging-Perceiving of {{Myers}}-{{Briggs Type Indicator}} ({{MBTI}}) in Online Social Forum}
+      \field{urlday}{5}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{volume}{9}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{e11382}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.7717/peerj.11382
+      \endverb
+      \verb{file}
+      \verb /Users/vincentleonardo/Documents/Zotero/storage/CRGUBBX2/Choong and Varathan - 2021 - Predicting judging-perceiving of Myers-Briggs Type.pdf;/Users/vincentleonardo/Documents/Zotero/storage/WUJ6BIGG/11382.html
+      \endverb
+      \verb{urlraw}
+      \verb https://peerj.com/articles/11382
+      \endverb
+      \verb{url}
+      \verb https://peerj.com/articles/11382
+      \endverb
+    \endentry
+    \entry{coffieldLearningStylesPedagogy2004}{article}{}
+      \name{author}{8}{}{%
+        {{hash=fa9749b6142995df6b3bc22f7c97911d}{%
+           family={Coffield},
+           familyi={C\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=44156d716f7aa612c4e4f343ae45d593}{%
+           family={Moseley},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=10a0e18cd55fe635aa333911cdd1e26d}{%
+           family={Hall},
+           familyi={H\bibinitperiod},
+           given={Elaine},
+           giveni={E\bibinitperiod}}}%
+        {{hash=c4fbd22cda782a44265954dbf3dd124f}{%
+           family={Ecclestone},
+           familyi={E\bibinitperiod},
+           given={Kathryn},
+           giveni={K\bibinitperiod}}}%
+        {{hash=fa9749b6142995df6b3bc22f7c97911d}{%
+           family={Coffield},
+           familyi={C\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=44156d716f7aa612c4e4f343ae45d593}{%
+           family={Moseley},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=10a0e18cd55fe635aa333911cdd1e26d}{%
+           family={Hall},
+           familyi={H\bibinitperiod},
+           given={Elaine},
+           giveni={E\bibinitperiod}}}%
+        {{hash=c4fbd22cda782a44265954dbf3dd124f}{%
+           family={Ecclestone},
+           familyi={E\bibinitperiod},
+           given={Kathryn},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{04bcf2dd27db05eeacdacb1f5493cf32}
+      \strng{fullhash}{e54b9109460804804841abbb303cbb13}
+      \strng{bibnamehash}{e54b9109460804804841abbb303cbb13}
+      \strng{authorbibnamehash}{e54b9109460804804841abbb303cbb13}
+      \strng{authornamehash}{04bcf2dd27db05eeacdacb1f5493cf32}
+      \strng{authorfullhash}{e54b9109460804804841abbb303cbb13}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Learning Styles and Pedagogy in Post-16 Learning: A Systematic and Critical Review}
+      \field{year}{2004}
+      \field{dateera}{ce}
+    \endentry
+    \entry{costajrRevisedNeoPersonality2008}{book}{}
+      \name{author}{2}{}{%
+        {{hash=dea700c29c0326003ffb6fd39201d85d}{%
+           family={Costa\bibnamedelima Jr},
+           familyi={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Paul\bibnamedelima T},
+           giveni={P\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=78a7e01bb7d08a09d2d5fa2cc10e783f}{%
+           family={McCrae},
+           familyi={M\bibinitperiod},
+           given={Robert\bibnamedelima R},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Sage Publications, Inc}%
+      }
+      \strng{namehash}{40e627170743a40d5c481946c5d45d35}
+      \strng{fullhash}{40e627170743a40d5c481946c5d45d35}
+      \strng{bibnamehash}{40e627170743a40d5c481946c5d45d35}
+      \strng{authorbibnamehash}{40e627170743a40d5c481946c5d45d35}
+      \strng{authornamehash}{40e627170743a40d5c481946c5d45d35}
+      \strng{authorfullhash}{40e627170743a40d5c481946c5d45d35}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{1-4129-4652-2}
+      \field{title}{The {{Revised Neo Personality Inventory}} (Neo-Pi-r).}
+      \field{year}{2008}
+      \field{dateera}{ce}
+    \endentry
+    \entry{GloVeFastTextTwo}{online}{}
+      \list{organization}{1}{%
+        {dzone.com}%
+      }
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this post, we’ll talk about GloVe and fastText, which are extremely popular word vector models in the NLP world.}
+      \field{langid}{english}
+      \field{title}{{{GloVe}} and {{fastText}} — {{Two Popular Word Vector Models}} in {{NLP}} - {{DZone AI}}}
+      \field{urlday}{5}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/vincentleonardo/Documents/Zotero/storage/W8LRW7QG/glove-and-fasttext-two-popular-word-vector-models.html
+      \endverb
+      \verb{urlraw}
+      \verb https://dzone.com/articles/glove-and-fasttext-two-popular-word-vector-models
+      \endverb
+      \verb{url}
+      \verb https://dzone.com/articles/glove-and-fasttext-two-popular-word-vector-models
+      \endverb
+    \endentry
+    \entry{GloVeGlobalVectors}{online}{}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labeltitlesource}{title}
+      \field{title}{{{GloVe}}: Global {{Vectors}} for {{Word Representation}}}
+      \field{urlday}{5}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/vincentleonardo/Documents/Zotero/storage/HIND97SG/glove.html
+      \endverb
+      \verb{urlraw}
+      \verb https://nlp.stanford.edu/projects/glove/
+      \endverb
+      \verb{url}
+      \verb https://nlp.stanford.edu/projects/glove/
+      \endverb
+    \endentry
+    \entry{lakeTrustNameBrand2019}{article}{}
+      \name{author}{4}{}{%
+        {{hash=2044bca5b4206a2ea277e59677eb7fa7}{%
+           family={Lake},
+           familyi={L\bibinitperiod},
+           given={Christopher\bibnamedelima J},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=71d74a59c2f4c10329c1da5ab912adf8}{%
+           family={Carlson},
+           familyi={C\bibinitperiod},
+           given={Jordan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5dcab059eec47181fa1e9c50bdf34ec5}{%
+           family={Rose},
+           familyi={R\bibinitperiod},
+           given={Alexandra},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4b690cfec20a4b5b178c73a7ae60ef24}{%
+           family={Chlevin-Thiele},
+           familyi={C\bibinithyphendelim T\bibinitperiod},
+           given={Cassandra},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Educational Publishing Foundation}%
+      }
+      \strng{namehash}{02804ae07ca51f72ea7410d9ea790232}
+      \strng{fullhash}{d205637467a0b606bf2462a872460cbe}
+      \strng{bibnamehash}{d205637467a0b606bf2462a872460cbe}
+      \strng{authorbibnamehash}{d205637467a0b606bf2462a872460cbe}
+      \strng{authornamehash}{02804ae07ca51f72ea7410d9ea790232}
+      \strng{authorfullhash}{d205637467a0b606bf2462a872460cbe}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1550-3461}
+      \field{journaltitle}{The Psychologist-Manager Journal}
+      \field{number}{2}
+      \field{shortjournal}{The Psychologist-Manager Journal}
+      \field{title}{Trust in Name Brand Assessments: The Case of the {{Myers}}-{{Briggs Type Indicator}}.}
+      \field{volume}{22}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{pages}{91}
+      \range{pages}{1}
+    \endentry
+    \entry{lilienfeldSciencePseudoscienceClinical2014}{book}{}
+      \name{author}{3}{}{%
+        {{hash=b26536fe61e8ae8fd8a73c37b0c5f960}{%
+           family={Lilienfeld},
+           familyi={L\bibinitperiod},
+           given={Scott\bibnamedelima O.},
+           giveni={S\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=98a13046e8e4c426b51f103494e59215}{%
+           family={Lynn},
+           familyi={L\bibinitperiod},
+           given={Steven\bibnamedelima Jay},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=3f007a370190cfdda9c0bebf66a74f13}{%
+           family={Lohr},
+           familyi={L\bibinitperiod},
+           given={Jeffrey\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Guilford Publications}%
+      }
+      \strng{namehash}{9a715d28e8a3f3e0bde12fceed40068e}
+      \strng{fullhash}{9a715d28e8a3f3e0bde12fceed40068e}
+      \strng{bibnamehash}{9a715d28e8a3f3e0bde12fceed40068e}
+      \strng{authorbibnamehash}{9a715d28e8a3f3e0bde12fceed40068e}
+      \strng{authornamehash}{9a715d28e8a3f3e0bde12fceed40068e}
+      \strng{authorfullhash}{9a715d28e8a3f3e0bde12fceed40068e}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This valued resource helps practitioners and students evaluate the merits of popular yet controversial practices in clinical psychology and allied fields, and base treatment decisions on the best available research. Leading authorities review widely used therapies for a range of child, adolescent, and adult disorders, differentiating between those that can stand up to the rigors of science and those that cannot. Questionable assessment and diagnostic techniques and self-help models are also examined. The volume provides essential skills for thinking critically as a practitioner, evaluating the validity of scientific claims, and steering clear of treatments that are ineffective or even harmful.New to This Edition*Reflects the significant growth of evidence-based practices in the last decade.*Updated throughout with the latest treatment research.*Chapter on attachment therapy.*Chapter on controversial interventions for child and adolescent antisocial behavior.*Addresses changes in DSM-5.}
+      \field{day}{12}
+      \field{eprinttype}{googlebooks}
+      \field{isbn}{978-1-4625-1751-0}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{pagetotal}{577}
+      \field{title}{Science and {{Pseudoscience}} in {{Clinical Psychology}}, {{Second Edition}}}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \verb{eprint}
+      \verb q50gBQAAQBAJ
+      \endverb
+      \keyw{Medical / Psychiatry / General,Psychology / Clinical Psychology,Psychology / Forensic Psychology,Social Science / Social Work}
+    \endentry
+    \entry{MachineLearningF1}{online}{}
+      \list{organization}{1}{%
+        {Stack Overflow}%
+      }
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labeltitlesource}{title}
+      \field{title}{Machine Learning - {{F1 Score}} vs {{ROC AUC}}}
+      \field{urlday}{5}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/vincentleonardo/Documents/Zotero/storage/ATK8AWW3/f1-score-vs-roc-auc.html
+      \endverb
+      \verb{urlraw}
+      \verb https://stackoverflow.com/questions/44172162/f1-score-vs-roc-auc
+      \endverb
+      \verb{url}
+      \verb https://stackoverflow.com/questions/44172162/f1-score-vs-roc-auc
+      \endverb
+    \endentry
+    \entry{myersGiftsDifferingUnderstanding1995}{book}{}
+      \name{author}{2}{}{%
+        {{hash=51e1ef38600aa8c63908c16337e77e07}{%
+           family={Myers},
+           familyi={M\bibinitperiod},
+           given={Isabel\bibnamedelima Briggs},
+           giveni={I\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=8a5b817367c6f207469e70a34be439ce}{%
+           family={Myers},
+           familyi={M\bibinitperiod},
+           given={Peter\bibnamedelima B.},
+           giveni={P\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Mobius}%
+      }
+      \strng{namehash}{34e415f41369dfd9ce7d95848ead2378}
+      \strng{fullhash}{34e415f41369dfd9ce7d95848ead2378}
+      \strng{bibnamehash}{34e415f41369dfd9ce7d95848ead2378}
+      \strng{authorbibnamehash}{34e415f41369dfd9ce7d95848ead2378}
+      \strng{authornamehash}{34e415f41369dfd9ce7d95848ead2378}
+      \strng{authorfullhash}{34e415f41369dfd9ce7d95848ead2378}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{THE BELOVED CLASSIC FOR UNDERSTANDING PERSONALITY TYPE.Like a thumbprint, personality type provides an instant snapshot of a person's uniqueness. Drawing on concepts originated by Carl Jung, this book distinguishes four categories of personality styles and shows how these qualities determine the way you perceive the world and come to conclusions about what you've seen. It then explains what they mean for your success in school, at a job, in a career and in your personal relationships. For more than 60 years, the Myers-Briggs Type Indicator (MBTI) tool has been the most widely used instrument in the world for determining personality type, and for more than 25 years, Gifts Differing has been the preeminent source for understanding it.}
+      \field{day}{5}
+      \field{eprinttype}{googlebooks}
+      \field{isbn}{978-0-89106-074-1}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{pagetotal}{256}
+      \field{shorttitle}{Gifts {{Differing}}}
+      \field{title}{Gifts {{Differing}}: Understanding {{Personality Type}}}
+      \field{year}{1995}
+      \field{dateera}{ce}
+      \verb{eprint}
+      \verb KJ_kBfphgQgC
+      \endverb
+      \keyw{Psychology / Assessment; Testing & Measurement,Psychology / Movements / Jungian,Psychology / Personality}
+    \endentry
+    \entry{storeyMyersBriggsPersonality2018}{dataset}{}
+      \name{author}{1}{}{%
+        {{hash=6739db28d96a263ac8bc95313783640c}{%
+           family={Storey},
+           familyi={S\bibinitperiod},
+           given={Dylan},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Zenodo}%
+      }
+      \strng{namehash}{6739db28d96a263ac8bc95313783640c}
+      \strng{fullhash}{6739db28d96a263ac8bc95313783640c}
+      \strng{bibnamehash}{6739db28d96a263ac8bc95313783640c}
+      \strng{authorbibnamehash}{6739db28d96a263ac8bc95313783640c}
+      \strng{authornamehash}{6739db28d96a263ac8bc95313783640c}
+      \strng{authorfullhash}{6739db28d96a263ac8bc95313783640c}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This data was pulled on 11/10/2018 from google big query using the following query: SELECT flair\_text.author\_flair\_text as flair\_text, comments.body as body, comments.subreddit as subreddit, comments.author as author FROM ( SELECT author,author\_flair\_text FROM [fh-bigquery:reddit\_comments.all] WHERE author\_flair\_text != 'null' AND REGEXP\_MATCH(author\_flair\_text,r'([IEie][SNsn][TFtf][JPjp]\textbackslash W)') GROUP BY author,author\_flair\_text ) AS flair\_text INNER JOIN ( SELECT author\_flair\_text, body, subreddit, author FROM [fh-bigquery:reddit\_comments.all] ) AS comments ON comments.author = flair\_text.author}
+      \field{day}{30}
+      \field{month}{7}
+      \field{title}{Myers {{Briggs Personality Tags}} on {{Reddit Data}}}
+      \field{urlday}{5}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.5281/zenodo.1482951
+      \endverb
+      \verb{file}
+      \verb /Users/vincentleonardo/Documents/Zotero/storage/IBPBQ7AX/1482951.html
+      \endverb
+      \verb{urlraw}
+      \verb https://zenodo.org/record/1482951
+      \endverb
+      \verb{url}
+      \verb https://zenodo.org/record/1482951
+      \endverb
+    \endentry
+    \entry{tobacykParanormalBeliefsBarnum1988}{article}{}
+      \name{author}{4}{}{%
+        {{hash=114feb74f74627a19e50a9edb1bb3dbe}{%
+           family={Tobacyk},
+           familyi={T\bibinitperiod},
+           given={Jerome},
+           giveni={J\bibinitperiod}}}%
+        {{hash=054e2e7b32489af8bd45829fa8bde500}{%
+           family={Milford},
+           familyi={M\bibinitperiod},
+           given={Gary},
+           giveni={G\bibinitperiod}}}%
+        {{hash=cc9665d32a12e22df248d12e509a5f77}{%
+           family={Springer},
+           familyi={S\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=740b4099b09b9b7ebebeaec850ab0b32}{%
+           family={Tobacyk},
+           familyi={T\bibinitperiod},
+           given={Zofia},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{65f073dd32342164e11ab88002dbf479}
+      \strng{fullhash}{3e841277def445b2e24f314ed226020f}
+      \strng{bibnamehash}{3e841277def445b2e24f314ed226020f}
+      \strng{authorbibnamehash}{3e841277def445b2e24f314ed226020f}
+      \strng{authornamehash}{65f073dd32342164e11ab88002dbf479}
+      \strng{authorfullhash}{3e841277def445b2e24f314ed226020f}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The acceptance phenomenon (i.e., the general tendency for persons to accept almost any bogus personality feedback; Layne, 1979) may be related to certain paranormal beliefs (Alcock, 1981; Hyman, 1981). Paranormal beliefs are beliefs in phenomena that, if authentic, violate basic limiting principles of science (Broad, 1953; Tobacyk \& Milford, 1983). One specific illustration of the acceptance phenomenon is the "Barnum effect," which refers to acceptance of bogus personality feedback consisting of relatively trivial statements with a high base rate (Layne, 1979; Snyder, Shenkel, \& Lowery, 1977). The Barnum effect has been implicated in personal validation and in "cold reading," both of which are used routinely by many astrologers, clairvoyants, faith healers, fortune tellers, graphologists, mediums, Tarot Card readers, and others (Hyman, 1981). It was hypothesized that paranormal beliefs emphasizing divinatory procedures that produce personalized feedback (i.e., precognition, spiritualism, superstition, and witchcraft) are associated with greater susceptibility to the Barnum effect.}
+      \field{annotation}{\_eprint: https://doi.org/10.1207/s15327752jpa5204\_13}
+      \field{day}{1}
+      \field{issn}{0022-3891}
+      \field{journaltitle}{Journal of Personality Assessment}
+      \field{month}{12}
+      \field{number}{4}
+      \field{title}{Paranormal {{Beliefs}} and the {{Barnum Effect}}}
+      \field{urlday}{5}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{volume}{52}
+      \field{year}{1988}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{737\bibrangedash 739}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1207/s15327752jpa5204_13
+      \endverb
+      \verb{file}
+      \verb /Users/vincentleonardo/Documents/Zotero/storage/294P9T9I/s15327752jpa5204_13.html
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1207/s15327752jpa5204_13
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1207/s15327752jpa5204_13
+      \endverb
+    \endentry
+    \entry{yamadaIncorporatingTextualInformation2019}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=bae266f792d5f1b655f2f7c5e090ca93}{%
+           family={Yamada},
+           familyi={Y\bibinitperiod},
+           given={Kosuke},
+           giveni={K\bibinitperiod}}}%
+        {{hash=3c433f81327c0f7ea5b2092ce6cc75af}{%
+           family={Sasano},
+           familyi={S\bibinitperiod},
+           given={Ryohei},
+           giveni={R\bibinitperiod}}}%
+        {{hash=294b003d4abfc8dcf3ccd47bc3f552cb}{%
+           family={Takeda},
+           familyi={T\bibinitperiod},
+           given={Koichi},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Florence, Italy}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{24c86438837f1c72b424591bdde12e56}
+      \strng{fullhash}{24c86438837f1c72b424591bdde12e56}
+      \strng{bibnamehash}{24c86438837f1c72b424591bdde12e56}
+      \strng{authorbibnamehash}{24c86438837f1c72b424591bdde12e56}
+      \strng{authornamehash}{24c86438837f1c72b424591bdde12e56}
+      \strng{authorfullhash}{24c86438837f1c72b424591bdde12e56}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Several recent studies have shown that textual information of user posts and user behaviors such as liking and sharing the specific posts are useful for predicting the personality of social media users. However, less attention has been paid to the textual information derived from the user behaviors. In this paper, we investigate the effect of textual information on user behaviors for personality prediction. Our experiments on the personality prediction of Twitter users show that the textual information of user behaviors is more useful than the co-occurrence information of the user behaviors. They also show that taking user behaviors into account is crucial for predicting the personality of users who do not post frequently.}
+      \field{booktitle}{Proceedings of the 57th {{Annual Meeting}} of the {{Association}} for {{Computational Linguistics}}: Student {{Research Workshop}}}
+      \field{month}{7}
+      \field{title}{Incorporating {{Textual Information}} on {{User Behavior}} for {{Personality Prediction}}}
+      \field{urlday}{5}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{177\bibrangedash 182}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.18653/v1/P19-2024
+      \endverb
+      \verb{file}
+      \verb /Users/vincentleonardo/Documents/Zotero/storage/U2HGVRRS/Yamada et al. - 2019 - Incorporating Textual Information on User Behavior.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://aclanthology.org/P19-2024
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/P19-2024
+      \endverb
+    \endentry
+    \entry{yiMBTIBasedCollaborativeRecommendation2016}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=975487cb75de099396b54af6664bbae9}{%
+           family={Yi},
+           familyi={Y\bibinitperiod},
+           given={Myeong-Yeon},
+           giveni={M\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=4f12c7d392ee91eb07662b8197621355}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={O-Joun},
+           giveni={O\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=db44c062cff6d751c2ed9292f6e7b63f}{%
+           family={Jung},
+           familyi={J\bibinitperiod},
+           given={Jason\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=d0b9fa69803e1238cb524b05a302afc1}{%
+           family={Vinh},
+           familyi={V\bibinitperiod},
+           given={Phan\bibnamedelima Cong},
+           giveni={P\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=58c1c9ca9ea5fdea155d097e3219bcc7}{%
+           family={Alagar},
+           familyi={A\bibinitperiod},
+           given={Vangalur},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{39bb5143ebb1627a311bf51a7c50f47b}
+      \strng{fullhash}{39bb5143ebb1627a311bf51a7c50f47b}
+      \strng{bibnamehash}{39bb5143ebb1627a311bf51a7c50f47b}
+      \strng{authorbibnamehash}{39bb5143ebb1627a311bf51a7c50f47b}
+      \strng{authornamehash}{39bb5143ebb1627a311bf51a7c50f47b}
+      \strng{authorfullhash}{39bb5143ebb1627a311bf51a7c50f47b}
+      \strng{editorbibnamehash}{9777611229b2cfbb4fc48305d24d1425}
+      \strng{editornamehash}{9777611229b2cfbb4fc48305d24d1425}
+      \strng{editorfullhash}{9777611229b2cfbb4fc48305d24d1425}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{A large number of Webtoon contents has caused difficulties on finding relevant Webtoons for users. Thereby, an efficient recommendation services are needed. However, since the existing recommendation method (e.g. collaborative filtering) has two fundamental problems: (i.e., data sparsity and scalability problem), it has difficulties with reflecting users’ personality. In this paper, we propose the MBTI-CF method to solve these problems and to involve users’ personality by building personality-based neighborhood using MBTI. In order to verify the efficiency of the proposed method, we conducted statistical testing by user survey (anonymous users have rated set of the pre-selected Webtoon contents). Three experimental results have shown that MBTI-CF provides improvement in terms of the data sparsity problem and the scalability problem and offers more stable performance.}
+      \field{booktitle}{Context-{{Aware Systems}} and {{Applications}}}
+      \field{isbn}{978-3-319-29236-6}
+      \field{langid}{english}
+      \field{series}{Lecture {{Notes}} of the {{Institute}} for {{Computer Sciences}}, {{Social Informatics}} and {{Telecommunications Engineering}}}
+      \field{shorttitle}{{{MBTI}}-{{Based Collaborative Recommendation System}}}
+      \field{title}{{{MBTI}}-{{Based Collaborative Recommendation System}}: A {{Case Study}} of {{Webtoon Contents}}}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{pages}{101\bibrangedash 110}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1007/978-3-319-29236-6_11
+      \endverb
+      \verb{file}
+      \verb /Users/vincentleonardo/Documents/Zotero/storage/CZLKRF8M/Yi et al. - 2016 - MBTI-Based Collaborative Recommendation System A .pdf
+      \endverb
+      \keyw{Collaborative filtering,MBTI (Myers-Briggs Type Indicator),Recommendation,Webtoon}
+    \endentry
+    \entry{yoonEffectBigFive2018}{article}{}
+      \name{author}{2}{}{%
+        {{hash=0c40d8495f24871471d3b53db7df336e}{%
+           family={Yoon},
+           familyi={Y\bibinitperiod},
+           given={Cheol-Ho},
+           giveni={C\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=c59f0a143921f64d43fba8bda5e1347a}{%
+           family={Lim},
+           familyi={L\bibinitperiod},
+           given={Dong-Sub},
+           giveni={D\bibinithyphendelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{9a4edba58ac6325fcfc530fbecdc1146}
+      \strng{fullhash}{9a4edba58ac6325fcfc530fbecdc1146}
+      \strng{bibnamehash}{9a4edba58ac6325fcfc530fbecdc1146}
+      \strng{authorbibnamehash}{9a4edba58ac6325fcfc530fbecdc1146}
+      \strng{authornamehash}{9a4edba58ac6325fcfc530fbecdc1146}
+      \strng{authorfullhash}{9a4edba58ac6325fcfc530fbecdc1146}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of International Trade \& Commerce}
+      \field{number}{3}
+      \field{shortjournal}{Journal of International Trade \& Commerce}
+      \field{title}{The {{Effect}} of the {{Big Five}} and the {{MBTI}} on {{Impulsive}} and {{Compulsive Buying Behaviors}}: An {{Integrated Analysis}} in {{Online Shopping}}}
+      \field{volume}{14}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{pages}{101\bibrangedash 117}
+      \range{pages}{17}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
